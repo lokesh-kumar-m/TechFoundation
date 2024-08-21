@@ -15,7 +15,7 @@ public class Plantapedia {
         FLowerPlant fp2=landPlantfactory.createFlowerPlant("rosette");
         fp2.getDescription();
         fp2.getFlowers("rosa");
-
+        // Change folder structure
         FLowerPlant fp3=waterPlantFactory.createFlowerPlant("pointed");
         fp3.getDescription();
         fp3.getFlowers("robin");
