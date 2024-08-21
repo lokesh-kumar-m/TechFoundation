@@ -5,6 +5,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        //Add enums, interface segrigation. custom inputs
+
         List<String> list=new ArrayList<>();
         list.add("plastic");
         list.add("cold");
