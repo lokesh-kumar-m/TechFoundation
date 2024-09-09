@@ -1,3 +1,5 @@
+
+
 public class DetailsBuilder {
     private Details details;
 
@@ -38,7 +40,14 @@ public class DetailsBuilder {
     }
 
     public Details build(){
-        return details;
+        try {
+            if(details.getName()!=null)return details;
+            else throw new UserNameNotFoundException("User name Not found Exception");
+        } catch (Exception e) {
+            System.out.println("Please enter user name");
+            System.out.println(e.getMessage());
+            return null;
+        }
     }
 }
 

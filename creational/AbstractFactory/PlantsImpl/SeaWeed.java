@@ -1,6 +1,6 @@
-package creational.AbstractFactory.Plants;
+package creational.AbstractFactory.PlantsImpl;
 
-import creational.AbstractFactory.WeedPlant;
+import creational.AbstractFactory.PlantsInterface.WeedPlant;
 
 public class SeaWeed implements WeedPlant {
 

@@ -1,6 +1,6 @@
-package creational.AbstractFactory.Plants;
+package creational.AbstractFactory.PlantsImpl;
 
-import creational.AbstractFactory.FruitPlant;
+import creational.AbstractFactory.PlantsInterface.FruitPlant;
 
 public class JackFruit implements FruitPlant {
 

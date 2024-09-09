@@ -1,14 +1,15 @@
 package creational.AbstractFactory.Factories;
 
-import creational.AbstractFactory.FLowerPlant;
-import creational.AbstractFactory.FruitPlant;
-import creational.AbstractFactory.WeedPlant;
-import creational.AbstractFactory.Plants.Cranberry;
-import creational.AbstractFactory.Plants.Hyacinth;
-import creational.AbstractFactory.Plants.Lotus;
-import creational.AbstractFactory.Plants.SeaWeed;
-import creational.AbstractFactory.Plants.Strawberry;
-import creational.AbstractFactory.Plants.WaterLily;
+import creational.AbstractFactory.Factories.FactoryInterface.PlantFactory;
+import creational.AbstractFactory.PlantsImpl.Cranberry;
+import creational.AbstractFactory.PlantsImpl.Hyacinth;
+import creational.AbstractFactory.PlantsImpl.Lotus;
+import creational.AbstractFactory.PlantsImpl.SeaWeed;
+import creational.AbstractFactory.PlantsImpl.Strawberry;
+import creational.AbstractFactory.PlantsImpl.WaterLily;
+import creational.AbstractFactory.PlantsInterface.FLowerPlant;
+import creational.AbstractFactory.PlantsInterface.FruitPlant;
+import creational.AbstractFactory.PlantsInterface.WeedPlant;
 
 public class WaterPlantFactory implements PlantFactory {
 

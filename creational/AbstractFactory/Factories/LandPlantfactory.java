@@ -1,14 +1,15 @@
 package creational.AbstractFactory.Factories;
 
-import creational.AbstractFactory.FLowerPlant;
-import creational.AbstractFactory.FruitPlant;
-import creational.AbstractFactory.WeedPlant;
-import creational.AbstractFactory.Plants.Daisy;
-import creational.AbstractFactory.Plants.Dandelion;
-import creational.AbstractFactory.Plants.JackFruit;
-import creational.AbstractFactory.Plants.Mango;
-import creational.AbstractFactory.Plants.PoisionIvy;
-import creational.AbstractFactory.Plants.Rose;
+import creational.AbstractFactory.Factories.FactoryInterface.PlantFactory;
+import creational.AbstractFactory.PlantsImpl.Daisy;
+import creational.AbstractFactory.PlantsImpl.Dandelion;
+import creational.AbstractFactory.PlantsImpl.JackFruit;
+import creational.AbstractFactory.PlantsImpl.Mango;
+import creational.AbstractFactory.PlantsImpl.PoisionIvy;
+import creational.AbstractFactory.PlantsImpl.Rose;
+import creational.AbstractFactory.PlantsInterface.FLowerPlant;
+import creational.AbstractFactory.PlantsInterface.FruitPlant;
+import creational.AbstractFactory.PlantsInterface.WeedPlant;
 
 public class LandPlantfactory implements PlantFactory {
 

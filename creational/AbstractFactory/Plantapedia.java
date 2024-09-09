@@ -2,6 +2,9 @@ package creational.AbstractFactory;
 
 import creational.AbstractFactory.Factories.LandPlantfactory;
 import creational.AbstractFactory.Factories.WaterPlantFactory;
+import creational.AbstractFactory.PlantsInterface.FLowerPlant;
+import creational.AbstractFactory.PlantsInterface.FruitPlant;
+import creational.AbstractFactory.PlantsInterface.WeedPlant;
 
 public class Plantapedia {
     public static void main(String[] args) {

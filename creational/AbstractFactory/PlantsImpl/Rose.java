@@ -1,6 +1,6 @@
-package creational.AbstractFactory.Plants;
+package creational.AbstractFactory.PlantsImpl;
 
-import creational.AbstractFactory.FLowerPlant;
+import creational.AbstractFactory.PlantsInterface.FLowerPlant;
 
 public class Rose implements FLowerPlant {
 

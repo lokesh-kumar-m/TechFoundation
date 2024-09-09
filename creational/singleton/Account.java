@@ -9,10 +9,12 @@ public class Account {
     private Map<String,Integer> transactions;
     private String name;
     private long incrementer=0;
+    private long currentBalance;
 
     private Account(String name){
         this.name=name;
         this.transactions=new HashMap<>();
+        this.currentBalance=0;
     }
 
     public static synchronized Account getInstance(String name){
@@ -31,9 +33,17 @@ public class Account {
         }
     }
 
-    public void addTransaction(int amount){
+    public String addTransaction(int amount){
+        if(currentBalance+amount>=0){
+            currentBalance+=amount;
+        }else{
+            return "Invalid transaction";
+        }
         incrementer+=1;
         String keyVal=LocalTime.now().toString()+incrementer+ (amount>0?" credit":" debit");
+        //add new current balace
         transactions.put(keyVal,amount);
+        return keyVal;
     }
+ 
 }

@@ -1,4 +1,4 @@
-package creational.AbstractFactory;
+package creational.AbstractFactory.PlantsInterface;
 
 public interface FLowerPlant {
     void getDescription();
