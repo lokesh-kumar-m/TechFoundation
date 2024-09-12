@@ -1,9 +1,12 @@
-package behavioral.ChainOfResponsibility;
+package behavioral.ChainOfResponsibility.Handlers;
 
-public class Router extends RequestHandler{
+import behavioral.ChainOfResponsibility.Packet;
+import behavioral.ChainOfResponsibility.RequestHandler;
+
+public class Router1 extends RequestHandler{
 
     @Override
-    public boolean parseRequest(Packet packet) {
+    public boolean parseRequest(Packet packet,boolean impl) {
        String destination=packet.getDestinationAddress();
        int firstOccurance=destination.indexOf('.');
        int address= Integer.parseInt(destination.substring(firstOccurance+1, destination.indexOf('.',firstOccurance+1)));
