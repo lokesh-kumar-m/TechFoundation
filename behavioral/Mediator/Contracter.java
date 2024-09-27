@@ -47,7 +47,7 @@ public class Contracter implements Mediator{
     @Override
     public void buy() {
         viewInformation();
-        System.out.println(movein);
+        // System.out.println(movein);
         if(movein!=null && movein.equals("ASAP")){
             System.out.println("The property has be sold to "+name);
             removePost();
