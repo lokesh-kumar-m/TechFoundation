@@ -1,6 +1,6 @@
 package behavioral.Visitor;
 
-public class Fatorial implements Elements{
+public class Fatorial implements IProgram{
 
     private int number;
 

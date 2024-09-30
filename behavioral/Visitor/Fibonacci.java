@@ -1,6 +1,6 @@
 package behavioral.Visitor;
 
-public class Fibonacci implements Elements {
+public class Fibonacci implements IProgram {
     private int number;
 
     public Fibonacci(int number){

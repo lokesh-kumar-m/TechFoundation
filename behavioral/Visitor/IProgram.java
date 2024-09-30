@@ -1,5 +1,5 @@
 package behavioral.Visitor;
 
-public interface Elements {
+public interface IProgram {
     void accept(Visitor visitor);
 }
