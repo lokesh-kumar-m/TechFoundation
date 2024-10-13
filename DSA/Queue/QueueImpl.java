@@ -1,10 +1,12 @@
-package DSA;
+package DSA.Queue;
 
+import DSA.LinkedList.CustomLinkedList;
+import DSA.LinkedList.Node;
 
-public class MyOrders {
+public class QueueImpl {
     private CustomLinkedList Queue;
 
-    public MyOrders(CustomLinkedList queue){
+    public QueueImpl(CustomLinkedList queue){
         this.Queue=queue;
     }
 
@@ -12,7 +14,7 @@ public class MyOrders {
         Queue.add(order);
     }
     public String fetchOrder(){
-        Node order=Queue.poll();
+        Node order=Queue.queuepoll();
         order.data.setStatus();
         return order.data.getOrder();
     }

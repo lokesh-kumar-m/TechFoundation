@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Queue;
 
 public class Order {
     private String name;
