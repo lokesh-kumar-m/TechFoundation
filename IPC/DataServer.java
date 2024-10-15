@@ -13,7 +13,7 @@ import java.util.List;
 public class DataServer {
     private ServerSocket serverSocket;
     private HashMap<String,List<Integer>> userdata=new HashMap<>();
-    private boolean getFlag,delFlag,addFlag;
+    
     public void start(int port) {
         try {
             serverSocket = new ServerSocket(port);
@@ -35,7 +35,7 @@ public class DataServer {
         private Socket clientSocket;
         private PrintWriter out;
         private BufferedReader in;
-        
+        private boolean getFlag,delFlag,addFlag;
 
         public ClientHandler(Socket socket) {
             clientSocket = socket;
@@ -45,19 +45,16 @@ public class DataServer {
         public void run() {
             try {
                 System.out.println("New client connected");
-                out = new PrintWriter(clientSocket.getOutputStream(), true);
                 in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                // out.println("Greetings from DB!!!!");
-                // out.flush();
-                // out.println("These are the services I offer");
-                // out.println("Get: fetch your record");
-                // out.println("delete:delete your record");
-                // out.println("add:add your data");
-                // out.flush();
-                
+                out = new PrintWriter(clientSocket.getOutputStream(), true);
+                ArrayList<String> greet=new ArrayList<>();
+                greet.add("Greetings!! ");
+                greet.add("services I offer: get, add, delete");
+                out.println(greet);
+                out.flush();
                 String inputLine;
                 while ((inputLine = in.readLine()) != null) {
-                    // System.out.println("new req");
+                    System.out.println("new req from "+clientSocket.getRemoteSocketAddress()+" :"+ inputLine);
                     if("get".equalsIgnoreCase(inputLine) || "delete".equalsIgnoreCase(inputLine) || "add".equalsIgnoreCase(inputLine)){
                         out.println("Server: Please enter your name");
                         if("get".equalsIgnoreCase(inputLine)){
@@ -104,12 +101,13 @@ public class DataServer {
                         break;
                     }
                     else {
-                        System.out.println(inputLine);
+                        // System.out.println(inputLine);
                         out.println("Server:"+inputLine );
                     }
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Connection terminated");
+                // e.printStackTrace();
             } finally {
                 try {
                     in.close();

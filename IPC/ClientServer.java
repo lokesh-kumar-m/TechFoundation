@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class GreetClient {
+public class ClientServer {
     private Socket clientSocket;
     private PrintWriter out;
     private BufferedReader in;
@@ -21,11 +21,9 @@ public class GreetClient {
     public String getServices(){
         String response="";
         try {
-            while((response=in.readLine())!=null){
-                response+=response;
-            }   
+            response=in.readLine();
         } catch (Exception e) {
-            e.printStackTrace();
+            // 
         }
         return response;
     }
