@@ -1,4 +1,4 @@
-package SOLID.Open_Closed;
+package SOLID.Open_Closed.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;

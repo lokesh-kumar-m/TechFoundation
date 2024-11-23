@@ -1,5 +1,5 @@
 package SOLID.Liskov.example1;
 
-public interface Discount {
+public interface IDiscount {
     public double discoutedPrice(double orderValue);
 }

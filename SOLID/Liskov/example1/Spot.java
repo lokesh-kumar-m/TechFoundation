@@ -1,6 +1,6 @@
 package SOLID.Liskov.example1;
 
-public class Spot implements Discount{
+public class Spot implements IDiscount{
 
     private boolean spotPayment;
 

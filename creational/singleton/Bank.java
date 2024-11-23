@@ -12,9 +12,11 @@ public class Bank {
         user2.addTransaction(3000);
         user2.addTransaction(500);
         user2.addTransaction(-100);
+        user2.addTransaction(-3500);
         user2.getTransactions();
 
         Account user3=Account.getInstance("lome");
         user3.getTransactions();
+        System.out.println(user3.currentBlanace());
     }
 }

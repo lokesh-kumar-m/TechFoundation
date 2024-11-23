@@ -6,7 +6,7 @@ public class SchoolOrder {
         System.out.println(new MultiYear().discoutedPrice(orderValue));
         double discPrice= new largeOrder().discoutedPrice(new MultiYear().discoutedPrice(orderValue));
         System.out.println(discPrice);
-        Discount spot=new Spot(true);
+        IDiscount spot=new Spot(true);
         System.out.println(spot.discoutedPrice(discPrice));
     }
 }
