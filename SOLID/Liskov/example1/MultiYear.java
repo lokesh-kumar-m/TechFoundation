@@ -1,6 +1,6 @@
 package SOLID.Liskov.example1;
 
-public class MultiYear implements Discount{
+public class MultiYear implements IDiscount{
 
     private double discout=5.0/100;
 

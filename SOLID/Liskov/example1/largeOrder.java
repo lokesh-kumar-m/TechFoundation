@@ -1,6 +1,6 @@
 package SOLID.Liskov.example1;
 
-public class largeOrder implements Discount{
+public class largeOrder implements IDiscount{
 
     @Override
     public double discoutedPrice(double orderValue) {

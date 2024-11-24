@@ -45,5 +45,8 @@ public class Account {
         transactions.put(keyVal,amount);
         return keyVal;
     }
+    public long currentBlanace(){
+        return currentBalance;
+    }
  
 }
