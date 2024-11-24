@@ -1,4 +1,4 @@
-package SOLID.Open_Closed;
+package SOLID.Open_Closed.Menu;
 
 public class Restaurant {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package SOLID.Open_Closed;
+package SOLID.Open_Closed.Menu;
 
 import java.util.ArrayList;
 import java.util.List;
