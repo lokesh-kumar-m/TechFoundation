@@ -1,28 +1,23 @@
 package SOLID.Open_Closed.Discount;
 
-public class LargeOrder implements IDiscount{
-    private int discount=0;
+public class LargeOrder implements IDiscount {
+    private int discount = 0;
 
     @Override
-    public void evaluateDiscount(Quotation quotation) {
-        int studentCount=0;
-        double orderVal=quotation.getOrderValue();
-        for(Integer count: quotation.getProducts().values()){
-            studentCount+=count;
+    public void validateDiscount(Quotation quotation) {
+        double orderVal = quotation.getOrderValue();
+        if (orderVal > 500000 && orderVal < 1000000) {
+            discount = 5;
+        } else if (orderVal > 1000000) {
+            discount = 10;
         }
-        if(orderVal>500000&&orderVal<1000000){
-            discount=5;
-        }
-        else if(orderVal>1000000){
-            discount=10;
-        }    
-        if(studentCount>0){
-            double originalPrice= orderVal;
-            double discount;
-                        double offerPrice=originalPrice-(originalPrice*discount)/100;
-            quotation.setDiscountedPrice(offerPrice);
-            quotation.setDiscountPercentage(quotation.getDiscountPercentage()+discount);
-        }
+        String tempDisc=quotation.getDiscountsApplied()==null?"":quotation.getDiscountsApplied();
+        double originalPrice = orderVal;
+        double tempPrice = quotation.getDiscountedPrice()!=0?quotation.getDiscountedPrice():originalPrice;
+        double offerPrice = tempPrice - (tempPrice * discount) / 100;
+        quotation.setDiscountedPrice(offerPrice);
+        quotation.setDiscountPercentage(quotation.getDiscountPercentage() + discount);
+        quotation.setDiscountsApplied(tempDisc+"Large Order ");
     }
-    
+
 }

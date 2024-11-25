@@ -12,6 +12,10 @@ public class Quotation {
     private String name;
     private String email;
     private String phone;
+    private int studentCountA;
+    private int studentCountC;
+    private int studentCountMs;
+    private String discountsApplied;
 
     public String getId() {
         return Id;
@@ -43,6 +47,12 @@ public class Quotation {
     public void setDiscountPercentage(double discountPercentage) {
         this.discountPercentage = discountPercentage;
     }
+    public double getDiscountedPrice() {
+        return discountedPrice;
+    }
+    public void setDiscountedPrice(double discountedPrice) {
+        this.discountedPrice = discountedPrice;
+    }
     public String getName() {
         return name;
     }
@@ -61,10 +71,28 @@ public class Quotation {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    public double getDiscountedPrice() {
-        return discountedPrice;
+    public int getStudentCountA() {
+        return studentCountA;
     }
-    public void setDiscountedPrice(double discountedPrice) {
-        this.discountedPrice = discountedPrice;
+    public void setStudentCountA(int studentCountA) {
+        this.studentCountA = studentCountA;
+    }
+    public int getStudentCountC() {
+        return studentCountC;
+    }
+    public void setStudentCountC(int studentCountC) {
+        this.studentCountC = studentCountC;
+    }
+    public int getStudentCountMs() {
+        return studentCountMs;
+    }
+    public void setStudentCountMs(int studentCountMs) {
+        this.studentCountMs = studentCountMs;
+    }
+    public String getDiscountsApplied() {
+        return discountsApplied;
+    }
+    public void setDiscountsApplied(String discountsApplied) {
+        this.discountsApplied = discountsApplied;
     }
 }

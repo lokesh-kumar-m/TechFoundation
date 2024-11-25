@@ -1,7 +1,5 @@
 package SOLID.Open_Closed.Discount;
 
-import java.util.HashMap;
-
 public class QuotationBuilder {
     private Quotation quotation;
 
@@ -15,10 +13,6 @@ public class QuotationBuilder {
     }
     public QuotationBuilder setContract(int contract) {
         quotation.setContract(contract);
-        return this;
-    }
-    public QuotationBuilder setProducts(HashMap<String, Integer> products) {
-        quotation.setProducts(products);
         return this;
     }
     public QuotationBuilder setOrderValue(double orderValue) {
@@ -45,6 +39,19 @@ public class QuotationBuilder {
         quotation.setDiscountedPrice(discountedPrice);
         return this;
     }
+    public QuotationBuilder setStudentCountA(int count){
+        quotation.setStudentCountA(count);
+        return this;
+    }
+    public QuotationBuilder setStudentCountC(int count){
+        quotation.setStudentCountC(count);
+        return this;
+    }    
+    public QuotationBuilder setStudentCountMs(int count){
+        quotation.setStudentCountMs(count);
+        return this;
+    }
+
     public Quotation build(){
         return quotation;
     }
