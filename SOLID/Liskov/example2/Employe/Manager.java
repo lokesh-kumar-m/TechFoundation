@@ -2,7 +2,7 @@ package SOLID.Liskov.example2.Employe;
 
 public class Manager implements IEmploye{
 
-    private String role="Project Manager";
+    private String role="Associate Project Manager";
     private String name;
     private int level;
 
@@ -19,6 +19,17 @@ public class Manager implements IEmploye{
     @Override
     public String toString() {
         return "Manager [role=" + role + ", name=" + name + ", level=" + level + "]";
+    }
+
+    @Override
+    public void promote() {
+        level=level+1;
+        if(role.contains("Associate")){
+            role=role.replace("Associate","");
+        }
+        if(role.equalsIgnoreCase("Project Manager")){
+            role="Sr Project Manager";
+        }
     }
     
 }

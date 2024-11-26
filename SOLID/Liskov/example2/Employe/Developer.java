@@ -20,5 +20,13 @@ public class Developer implements IEmploye{
     public String toString() {
         return "Developer [role=" + role + ", name=" + name + ", level=" + level + "]";
     }
+
+    @Override
+    public void promote() {
+        this.level=level+1;
+        if(level==4){
+            role="Senior Software Developer";
+        }
+    }
     
 }

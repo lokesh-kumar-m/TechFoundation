@@ -6,6 +6,7 @@ public class App {
     
     public static void main(String[] args) {
         UserCreator creator=new UserCreator();
+        // Creates a list of Person objects from a comma-separated string of names
         List<Person> friends= creator.createUsers("rore,bhsa,sakn");
 
         SplitCalculator splicalculator =new SplitCalculator();
@@ -15,7 +16,7 @@ public class App {
         for (Person frnd : friends) {
             splitManage.addNewDet(frnd, splitAmount); 
         }
-        
+
         Logger log=new Logger();
         log.recordLogger(friends);
 
