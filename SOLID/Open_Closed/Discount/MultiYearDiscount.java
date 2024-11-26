@@ -1,6 +1,6 @@
-package SOLID.Open_Closed.Example.Discount;
+package SOLID.Open_Closed.Discount;
 
-import SOLID.Open_Closed.Example.Builder.Quotation;
+import SOLID.Open_Closed.Builder.Quotation;
 
 public class MultiYearDiscount implements IDiscount{
     private int discount=5;

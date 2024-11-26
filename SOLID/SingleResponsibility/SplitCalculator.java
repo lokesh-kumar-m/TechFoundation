@@ -6,7 +6,6 @@ import java.util.Map;
 
 public class SplitCalculator {
     private Logger log=new Logger();
-    private SplitManager splitManager;
 
     public double equalSplit(List<Person> personLst, double amount){
         int friendsCount=personLst.size();

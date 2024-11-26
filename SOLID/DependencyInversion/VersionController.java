@@ -1,9 +1,9 @@
 package SOLID.DependencyInversion;
 
 public class VersionController {
-    private Version version;
+    private IVersion version;
     
-    public VersionController(Version version){
+    public VersionController(IVersion version){
         this.version=version;
     }
 

@@ -1,6 +1,6 @@
 package SOLID.DependencyInversion;
 
-public interface Version {
+public interface IVersion {
     public void getInfo();
     public void getFeatures();
 }

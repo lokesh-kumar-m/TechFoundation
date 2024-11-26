@@ -1,4 +1,4 @@
-package SOLID.Open_Closed.Example.Builder;
+package SOLID.Open_Closed.Builder;
 
 public class QuotationBuilder {
     private Quotation quotation;

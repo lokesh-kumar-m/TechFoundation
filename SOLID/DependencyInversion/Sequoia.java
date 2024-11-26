@@ -1,6 +1,6 @@
 package SOLID.DependencyInversion;
 
-public class Sequoia implements Version{
+public class Sequoia implements IVersion{
 
     @Override
     public void getInfo() {

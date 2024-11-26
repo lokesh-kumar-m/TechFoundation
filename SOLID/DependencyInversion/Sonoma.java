@@ -1,6 +1,6 @@
 package SOLID.DependencyInversion;
 
-public class Sonoma implements Version{
+public class Sonoma implements IVersion{
 
     @Override
     public void getInfo() {

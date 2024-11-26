@@ -1,7 +1,7 @@
-package SOLID.Open_Closed.Example;
+package SOLID.Open_Closed;
 
-import SOLID.Open_Closed.Example.Builder.Quotation;
-import SOLID.Open_Closed.Example.Builder.QuotationBuilder;
+import SOLID.Open_Closed.Builder.QuotationBuilder;
+import SOLID.Open_Closed.Builder.Quotation;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,13 +1,13 @@
-package SOLID.Open_Closed.Example;
+package SOLID.Open_Closed;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import SOLID.Open_Closed.Example.Builder.Quotation;
-import SOLID.Open_Closed.Example.Discount.IDiscount;
-import SOLID.Open_Closed.Example.Discount.LargeOrder;
-import SOLID.Open_Closed.Example.Discount.MultiYearDiscount;
+import SOLID.Open_Closed.Builder.Quotation;
+import SOLID.Open_Closed.Discount.IDiscount;
+import SOLID.Open_Closed.Discount.LargeOrder;
+import SOLID.Open_Closed.Discount.MultiYearDiscount;
 
 public class QuotationEvaluator {
     private List<IDiscount> availabeDiscounts;
