@@ -1,4 +1,6 @@
-package SOLID.Open_Closed.Discount;
+package SOLID.Open_Closed.Example.Discount;
+
+import SOLID.Open_Closed.Example.Builder.Quotation;
 
 public class LargeOrder implements IDiscount {
     private int discount = 0;
