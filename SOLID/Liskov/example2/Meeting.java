@@ -12,10 +12,14 @@ public class Meeting {
         IEmploye jrDeveloper= new Developer("Harsh", 4);
         IEmploye tester=new Tester("Goldi", 5);
 
-        Introduction introduce=new Introduction();
-        introduce.intro(manager);
-        introduce.intro(srDeveloper);
-        introduce.intro(jrDeveloper);
-        introduce.intro(tester);
+        EmployeeOperations employeeController=new EmployeeOperations();
+        employeeController.intro(manager);
+        employeeController.intro(srDeveloper);
+        employeeController.intro(jrDeveloper);
+        employeeController.intro(tester);
+
+        employeeController.promotion(jrDeveloper);
+        employeeController.promotion(manager);
+        
     }
 }

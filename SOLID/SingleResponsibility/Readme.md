@@ -24,10 +24,7 @@ Software is constantly evolving to meet new requirements. If a class has multipl
 
 By ensuring **loose coupling** and **high cohesion**, ensure that classes adhere to SRP.
 
----
 
 ## Benefits of SRP
 
-**Reduced Impact of Changes**, **Ease of Maintenance**, **Improved Readability**, **Better Reusability**:  
-
----
+**Reduced Impact of Changes**, **Ease of Maintenance**, **Improved Readability**, **Better Reusability**  
