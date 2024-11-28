@@ -1,4 +1,4 @@
-package SOLID.DependencyInversion;
+package SOLID.DependencyInversion.Versions;
 
 public class Sonoma implements IVersion{
 

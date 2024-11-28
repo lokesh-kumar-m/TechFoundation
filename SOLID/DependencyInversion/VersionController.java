@@ -1,5 +1,7 @@
 package SOLID.DependencyInversion;
 
+import SOLID.DependencyInversion.Versions.IVersion;
+
 public class VersionController {
     private IVersion version;
     
