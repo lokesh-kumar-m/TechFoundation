@@ -12,8 +12,8 @@ This means that every class should have a **well-defined and single responsibili
 
 ### The Nature of Software Changes
 Software is constantly subjected new requirements. If a class has multiple responsibilities, even small changes can:
-- Disturb existing functionalities.
-- Hard to debug.
+- Frequent changes.
+- Hard to debug and understand.
 
 ### Cohesion And Coupling
 Cohesion is essential in creating SRP. Both of them go in contrast. 

@@ -8,3 +8,7 @@ The **Interface Segregation Principle (ISP)** is the fourth principle in the SOL
 
 This means that a class should not implement an interface if it requires it to provide implementations for methods that it doesn't need. In such cases the large interface should be broken down into smaller interfaces that are more relevant, this ensure that a class will always implement the interfaces that are relevant to it.
 
+## Benifits of ISP
+
+- Better maintainability
+- Resistance to changes.
