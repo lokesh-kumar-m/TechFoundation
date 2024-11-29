@@ -3,7 +3,11 @@ package SOLID.SingleResponsibility;
 import java.util.List;
 
 public class SplitCalculator {
-    private Logger log=new Logger();
+    private Logger log;
+
+    public SplitCalculator(Logger log){
+        this.log=log;
+    }
 
     // Method to calculate an equal split of a given amount among a list of people.
     public double equalSplit(List<Person> personLst, double amount){

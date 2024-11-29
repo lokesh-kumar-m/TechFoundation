@@ -24,7 +24,7 @@ public class Developer implements IEmploye{
     @Override
     public void promote() {
         this.level=level+1;
-        if(level==4){
+        if(level>=4){
             role="Senior Software Developer";
         }
     }

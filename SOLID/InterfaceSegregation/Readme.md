@@ -12,3 +12,5 @@ This means that a class should not implement an interface if it requires it to p
 
 - Better maintainability
 - Resistance to changes.
+
+Class red uses method1 from  Interface A, class Green uses method2 from interface A. If red need to modify the method1 signature, the change will extend to class Green as well even though it doesn't need that method. 

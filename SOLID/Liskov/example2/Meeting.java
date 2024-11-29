@@ -20,6 +20,8 @@ public class Meeting {
 
         employeeController.promotion(jrDeveloper);
         employeeController.promotion(manager);
+        employeeController.intro(jrDeveloper);
+        employeeController.intro(manager);
         
     }
 }

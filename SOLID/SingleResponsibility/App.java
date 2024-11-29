@@ -5,11 +5,12 @@ import java.util.List;
 public class App {
     
     public static void main(String[] args) {
+        Logger log=new Logger();
         UserCreator creator=new UserCreator();
         // Creates a list of Person objects from a comma-separated string of names
         List<Person> friends= creator.createUsers("rore,bhsa,sakn");
 
-        SplitCalculator splicalculator =new SplitCalculator();
+        SplitCalculator splicalculator =new SplitCalculator(log);
         double splitAmount=splicalculator.equalSplit(friends, 2500);
 
         SplitManager splitManage=new SplitManager("lome");
@@ -17,7 +18,7 @@ public class App {
             splitManage.addNewDet(frnd, splitAmount); 
         }
 
-        Logger log=new Logger();
+        
         log.recordLogger(friends);
 
     }
